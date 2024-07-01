@@ -1,0 +1,134 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #d5e0eb;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+.judul {
+    margin-top: -15px;
+}
+
+.judul h1 {
+    font-weight: bold;
+    color: #022C43;
+    -webkit-text-stroke: 1.5px #022C43;
+    font-size: 1.7rem;
+}
+.judul h1 span {
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-text-stroke: 4px #022C43;
+    font-size: 4rem;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #022C43;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.menu a:hover {
+    background-color: #022C43;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Navbar finis */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.image {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    display: block;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .menu a {
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin: 0 0 2rem 0;
+    }
+
+    .text {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .judul h1 {
+        font-size: 1.2rem;
+    }
+
+    .judul h1 span {
+        font-size: 2.5rem;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+}

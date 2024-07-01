@@ -1,0 +1,140 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar start */
+nav {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+.judul {
+    margin-top: -15px;
+}
+
+.judul h1 {
+    font-weight: bold;
+    color: #022C43;
+    -webkit-text-stroke: 1.5px #022C43;
+    font-size: 1.7rem;
+}
+.judul h1 span {
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-text-stroke: 4px #022C43;
+    font-size: 4rem;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #022C43;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.menu a:hover {
+    background-color: #022C43;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Navbar finis */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.elemen-produk {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-produk {
+    text-align: center;
+    margin: 1rem;
+    flex: 1 1 200px;
+}
+
+.box-produk .image {
+    display: block;
+}
+
+.box-produk .image p span {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.box-produk .image p {
+    font-weight: 400;
+    margin-top: -1.5rem;
+}
+
+.box-produk .image h3 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.box-produk .image img {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    background-color: #F6F5F2;
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .judul h1 {
+        font-size: 1.5rem;
+    }
+
+    .judul h1 span {
+        font-size: 3rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .judul h1 {
+        font-size: 1.2rem;
+    }
+
+    .judul h1 span {
+        font-size: 2.5rem;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+}
